@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fuck Elpais
 // @namespace    http://tampermonkey.net/
-// @version      v1.0.3
+// @version      v1.0.4
 // @description  Removes ElPais paywall and reloads game scripts
 // @author       Freak404
 // @match        https://elpais.com/juegos/*
@@ -13,18 +13,20 @@
 
 (function() {
     'use strict';
-    let retries = 50;
+    let retries = 10;
 
     const intervalID = setInterval(_ => {
         const match = document.querySelector("#ctn_freemium_article");
         if(match) {
             window.PMCompassHidePaywallLayer();
+        }
+
+        retries--;
+        if(retries == 0 || match) {
             var elem = document.createElement("script");
             elem.src = "https://cdn-elpais.smartgames.media/script.js?v="+Math.random().toString(36).substring(2, 10);
             document.body.appendChild(elem);
-        };
-
-        retries--;
-        if(retries == 0 || match) clearInterval(intervalID);
+            clearInterval(intervalID);
+        }
     }, 100);;
 })();
