@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         Fuck Elpais
+// @description  Removes ElPais paywall and reloads game scripts
 // @namespace    http://tampermonkey.net/
 // @version      2026-04-16
 // @description  try to take over the world!
