@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0.5
 // @description  Removes ElPais paywall and reloads game scripts
-// @author       Freak404
+// @author       mriberadev
 // @match        https://elpais.com/juegos/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=elpais.com
 // @license      GNU GPLv3
