@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Fuck Elpais
 // @namespace    http://tampermonkey.net/
-// @version      v1.0.2
+// @version      v1.0.3
 // @description  Removes ElPais paywall and reloads game scripts
 // @author       Freak404
 // @match        https://elpais.com/juegos/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=elpais.com
+// @license      GNU GPLv3
 // @grant        none
 // @run-at document-end
 // ==/UserScript==
