@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         Fuck Elpais
-// @description  Removes ElPais paywall and reloads game scripts
 // @namespace    http://tampermonkey.net/
-// @version      2026-04-16
-// @description  try to take over the world!
-// @author       You
+// @version      v1.0.2
+// @description  Removes ElPais paywall and reloads game scripts
+// @author       Freak404
 // @match        https://elpais.com/juegos/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=elpais.com
 // @grant        none
